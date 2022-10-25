@@ -7,9 +7,9 @@ const newsController = require('../app/controllers/NewsController');
 // URL trong này sẽ bằng URL bên ngoài truyền vào + URL đc định nghĩa ở đây
 // /news (bên ngoài) + /:slug (định nghĩa ở đây): /news/:slug
 // :slug => giá trị ngẫu nhiên
-router.use('/:slug', newsController.show);
+router.get('/:slug', newsController.show);
 
 // /news (bên ngoài) + / (định nghĩa ở đây): /news
-router.use('/', newsController.index);
+router.get('/', newsController.index);
 
 module.exports = router;

@@ -6,6 +6,7 @@ module.exports = {
         return mongooses.map((mongoose) => mongoose.toObject());
     },
     mongooseToObject: function (mongoose) {
+        // mongoose có tồn tại (true)
         return mongoose ? mongoose.toObject() : mongoose;
     },
 };
