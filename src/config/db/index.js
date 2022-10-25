@@ -1,3 +1,4 @@
+// File này thực hiện connect đến database (mongodb) qua mongoose
 const mongoose = require('mongoose');
 
 async function connect() {
